@@ -8,6 +8,9 @@ import {
 } from "react-router-dom";
 import Main from './Layout/Main';
 import Home from './Components/Home/Home/Home';
+import ProjectDetails from './Components/Home/Projects/ProjectDetails';
+import ProjectLayout from './Layout/ProjectLayout';
+
 
 const router = createBrowserRouter([
   {
@@ -17,9 +20,20 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-      }
+
+      } 
     ]
   },
+  {
+    path: "/projects",
+    element: <ProjectLayout />,
+    children: [
+      {
+        path: "projectsDetails/:id",
+        element: <ProjectDetails />
+      },
+    ],
+  }  
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

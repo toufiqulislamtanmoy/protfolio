@@ -10,17 +10,28 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "aos": "^2.3.4",
+    "babel-plugin-macros": "^3.1.0",
     "daisyui": "^2.51.6",
     "localforage": "^1.10.0",
     "lottie-react": "^2.4.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
+    "react-animated-progress-bar": "^1.1.2",
     "react-dom": "^18.2.0",
+    "react-file-download": "^0.3.5",
     "react-icons": "^4.8.0",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.11.2",
     "react-scroll": "^1.8.9",
-    "sort-by": "^1.2.0"
+    "react-type-animation": "^3.1.0",
+    "sort-by": "^1.2.0",
+    "sweetalert2": "^11.7.12",
+    "tilt.js": "^1.2.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

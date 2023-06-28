@@ -1,0 +1,122 @@
+[
+    {
+        "projectID":1,
+        "project_name": "Summer Suffery",
+        "project_banner": "https://i.ibb.co/1fgvGXv/summer.png",
+        "thumbnail": [
+            "https://i.ibb.co/b7w7gRS/Screenshot-2023-06-26-185949.png",
+            "https://i.ibb.co/9hzrpJC/Screenshot-2023-06-26-185103.png",
+            "https://i.ibb.co/QbFGZBv/Screenshot-2023-06-26-185236.png",
+            "https://i.ibb.co/YyMrxwy/Screenshot-2023-06-26-185325.png",
+            "https://i.ibb.co/8M7T89C/Screenshot-2023-06-26-185423.png",
+            "https://i.ibb.co/bjhsL6k/Screenshot-2023-06-26-185525.png",
+            "https://i.ibb.co/G5BfF17/Screenshot-2023-06-26-185626.png",
+            "https://i.ibb.co/C88pjvH/Screenshot-2023-06-26-185709.png",
+            "https://i.ibb.co/sHhStD4/Screenshot-2023-06-26-185811.png",
+            "https://i.ibb.co/9vJRZcV/Screenshot-2023-06-26-185858.png",
+            "https://i.ibb.co/r5q9xJV/Screenshot-2023-06-26-190129.png",
+            "https://i.ibb.co/Ky2m41V/Screenshot-2023-06-26-190235.png",
+            "https://i.ibb.co/kJ2vKb3/Screenshot-2023-06-26-190323.png",
+            "https://i.ibb.co/r2QPwGv/Screenshot-2023-06-26-190415.png"
+        ],
+        "project_summary": "An innovative online platform for summer camps, prioritizing foreign language learning.",
+        "tools_and_technology": [
+            "React",
+            "Tailwind",
+            "Express Js",
+            "Node Js",
+            "MongoDB",
+            "Firebase Authentication",
+            "JWT",
+            "React Query",
+            "React-from-hook",
+            "Axios"
+        ],
+        "live_site_link": "https://summer-suffery.web.app/",
+        "client_side_link": "https://github.com/toufiqulislamtanmoy/summer-suffery-client",
+        "server_side_link": "https://github.com/toufiqulislamtanmoy/summer-suffery-server",
+        "date_of_creation": "2023-06-12",
+        "features": [
+            "Dedicated Dashboard",
+            "Enroll Course",
+            "Pay Online"
+        ]
+    },
+    {
+        "projectID":2,
+        "project_name": "Movie-Mania",
+        "project_banner": "https://i.ibb.co/mX7C8F6/Screenshot-2023-06-26-192305.png",
+        "thumbnail": [
+            "https://i.ibb.co/6BCrdTD/Screenshot-2023-06-26-192204.png",
+            "https://i.ibb.co/H7MyRTV/Screenshot-2023-06-26-192351.png",
+            "https://i.ibb.co/kmwf0BF/Screenshot-2023-06-26-192542.png",
+            "https://i.ibb.co/2PF8pjw/Screenshot-2023-06-26-193109.png",
+            "https://i.ibb.co/LJtg07p/Screenshot-2023-06-26-192647.png",
+            "https://i.ibb.co/M8Dn7Mk/Screenshot-2023-06-26-192801.png",
+            "https://i.ibb.co/WKHBXpj/Screenshot-2023-06-26-193010.png",
+            "https://i.ibb.co/n1dN93G/Screenshot-2023-06-26-193201.png"
+           
+        ],
+        "project_summary": "Web app for exploring movies, including downloads",
+        "tools_and_technology": [
+            "React",
+            "Tailwind",
+            "Express Js",
+            "Node Js",
+            "MongoDB",
+            "Firebase Authentication",
+            "JWT",
+            "React Query",
+            "React-from-hook",
+            "Axios"
+        ],
+        "live_site_link": "https://movie-monster-fa66c.web.app/",
+        "client_side_link": "https://github.com/toufiqulislamtanmoy/movie-menia-client",
+        "server_side_link": "https://github.com/toufiqulislamtanmoy/movie-mania-server",
+        "date_of_creation": "2023-06-18",
+        "features": [
+            "Dedicated Dashboard",
+            "Explore Latest Movie",
+            "Download And Watch",
+            "Buy Credit"
+        ]
+    },
+    {
+        "projectID":3,
+        "project_name": "Toy-Monster",
+        "project_banner": "https://i.ibb.co/CVZjyX5/Screenshot-2023-06-26-193724.png",
+        "thumbnail": [
+            "https://i.ibb.co/7CPckWt/Screenshot-2023-06-26-193833.png",
+            "https://i.ibb.co/3pp8MLg/Screenshot-2023-06-26-193934.png",
+            "https://i.ibb.co/xHXxk50/Screenshot-2023-06-26-194121.png",
+            "https://i.ibb.co/rv9byjk/Screenshot-2023-06-26-194202.png",
+            "https://i.ibb.co/TqrzMbw/Screenshot-2023-06-26-194239.png",
+            "https://i.ibb.co/HCR2W9t/Screenshot-2023-06-26-194318.png",
+            "https://i.ibb.co/tzmKTXX/Screenshot-2023-06-26-194404.png",
+            "https://i.ibb.co/4mZZ3tj/Screenshot-2023-06-26-194434.png",
+            "https://i.ibb.co/cL2xfkz/Screenshot-2023-06-26-194511.png",
+            "https://i.ibb.co/4NBZC5s/Screenshot-2023-06-26-194548.png"
+           
+        ],
+        "project_summary": "Web app for online toy inventory management system.",
+        "tools_and_technology": [
+            "React",
+            "Tailwind",
+            "Express Js",
+            "Node Js",
+            "MongoDB",
+            "React Tab",
+            "Firebase Authentication"
+        ],
+        "live_site_link": "https://vocal-crumble-0a6f4d.netlify.app/",
+        "client_side_link": "https://github.com/toufiqulislamtanmoy/movie-menia-client",
+        "server_side_link": "https://github.com/toufiqulislamtanmoy/movie-mania-server",
+        "date_of_creation": "2023-06-18",
+        "features": [
+            "Dedicated Dashboard",
+            "Explore Latest Movie",
+            "Download And Watch",
+            "Buy Credit"
+        ]
+    }
+]

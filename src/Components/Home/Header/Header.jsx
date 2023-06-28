@@ -1,21 +1,25 @@
 import { Link } from "react-router-dom";
-import header from "../../../assets/Banner/banner.png"
-import { 
+import header from "../../../assets/Banner/banner3.jpg"
+import { TypeAnimation } from 'react-type-animation';
+import {
     FaEnvelope,
     FaPhoneVolume,
     FaLocationArrow,
     FaFacebook,
     FaLinkedin,
     FaGithubAlt,
+    FaDownload
 } from "react-icons/fa";
+
 const Header = () => {
+
     return (
-        <div className="" id="header">
-            <div className="hero min-h-screen bg-base-200">
+        <div className="lg:my-0 my-24" id="header">
+            <div className="hero min-h-screen bg-base-100">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="avatar lg:w-1/2 flex items-center justify-end">
-                        <div className="rounded-full border-8 border-gray-400 shadow-2xl">
-                            <img src={header} className="max-w-sm rounded-lg shadow-2xl" />
+                        <div className="cursor-pointer rounded-full border-8 border-gray-400 hover:border-green-400 shadow-2xl">
+                            <img src={header} className="max-w-sm rounded-lg shadow-2xl object-cover transition-transform duration-500 hover:rotate-3 hover:scale-125" />
                         </div>
                     </div>
 
@@ -24,34 +28,46 @@ const Header = () => {
                             <div className="chat-bubble chat-bubble-secondary">Assalamualikum, I'm</div>
                         </div>
                         <h1 className="lg:text-5xl text-3xl font-bold">Toufiqul Islam Tanmoy</h1>
-                        <h1 className="lg:text-3xl text-xl font-extralight">Web Developer</h1>
-                        <p className="py-6">A highly skilled web developer with a passion for creating beautiful and functional websites. With over six months of experience in the industry, I specialize in HTML, CSS, JavaScript, and Bootstrap. I've worked on various projects, including landing pages, blogs, and e-commerce websites</p>
+                        <TypeAnimation
+                            sequence={[
+                                'Web Developer',
+                                1000,
+                                '',
+                                1000
+                            ]}
+                            wrapper="span"
+                            speed={50}
+                            style={{ fontSize: '2em', display: 'inline-block' }}
+                            repeat={Infinity}
+
+                        />
+                        <p className="py-6 text-justify">I'm an exceptional web developer, crafting stunning websites with expertise in HTML, CSS, JavaScript, Bootstrap,Tailwind, React.js, Node.js, and Express.js.</p>
                         <div className="space-y-3 ">
-                            <Link to="contact" className=" text-white flex items-center gap-4 hover:text-[#00eeff] cursor-pointer" spy={true} smooth={true} offset={50} duration={500} >
+                            <p to="contact" className=" flex items-center gap-4 hover:text-[#00eeff] cursor-pointer" >
                                 <FaEnvelope /> tittanmoy@gmail.com
-                            </Link>
-                            <Link to="contact" className="text-white flex items-center gap-4 hover:text-[#00eeff] cursor-pointer" spy={true} smooth={true} offset={50} duration={500} >
+                            </p>
+                            <p to="contact" className="flex items-center gap-4 hover:text-[#00eeff] cursor-pointer" >
                                 <FaPhoneVolume />+880 1848-189482
-                            </Link>
-                            <Link to="contact" className="text-white flex items-center gap-4 hover:text-[#00eeff] cursor-pointer" spy={true} smooth={true} offset={50} duration={500} >
+                            </p>
+                            <p to="contact" className="flex items-center gap-4 hover:text-[#00eeff] cursor-pointer" >
                                 <FaLocationArrow />Rajshahi,Bangladesh
-                            </Link>
+                            </p>
 
                         </div>
                         {/* Social Links */}
                         <div className="my-10 flex items-center gap-3">
-                            <Link to="https://www.facebook.com/toufiqulislamtanmoy" className="text-white  gap-4 hover:text-[#00eeff] cursor-pointer text-4xl transition duration-150 ease-out hover:ease-in" spy={true} smooth={true} offset={50} duration={500} >
+                            <Link to="https://www.facebook.com/toufiqulislamtanmoy" className=" gap-4 hover:text-[#00eeff] cursor-pointer text-4xl transition duration-150 ease-out hover:ease-in" spy={true} smooth={true} offset={50} duration={500} >
                                 <FaFacebook />
                             </Link>
-                            <Link to="https://github.com/toufiqulislamtanmoy" className="text-white  gap-4 hover:text-[#00eeff] cursor-pointer text-4xl transition duration-150 ease-out hover:ease-in" spy={true} smooth={true} offset={50} duration={500} >
+                            <Link to="https://github.com/toufiqulislamtanmoy" className=" gap-4 hover:text-[#00eeff] cursor-pointer text-4xl transition duration-150 ease-out hover:ease-in" spy={true} smooth={true} offset={50} duration={500} >
                                 <FaGithubAlt />
                             </Link>
-                            <Link to="https://www.linkedin.com/in/md-toufiqul-islam-52a4021b4/" className="text-white  gap-4 hover:text-[#00eeff] cursor-pointer text-4xl transition duration-150 ease-out hover:ease-in" spy={true} smooth={true} offset={50} duration={500} >
+                            <Link to="https://www.linkedin.com/in/md-toufiqul-islam-52a4021b4/" className=" gap-4 hover:text-[#00eeff] cursor-pointer text-4xl transition duration-150 ease-out hover:ease-in" spy={true} smooth={true} offset={50} duration={500} >
                                 <FaLinkedin />
                             </Link>
 
                         </div>
-                        <button className="btn btn-primary btn-outline">Hire Now</button>
+                        <a className="btn btn-outline" href='resume.pdf' download="Toufiqul_Resume.pdf">Download Resume <FaDownload className=" mx-3" /></a>
                     </div>
                 </div>
             </div>
