@@ -1,6 +1,6 @@
 [
     {
-        "projectID":1,
+        "projectID": 1,
         "project_name": "Summer Suffery",
         "project_banner": "https://i.ibb.co/1fgvGXv/summer.png",
         "thumbnail": [
@@ -43,7 +43,7 @@
         ]
     },
     {
-        "projectID":2,
+        "projectID": 2,
         "project_name": "Movie-Mania",
         "project_banner": "https://i.ibb.co/mX7C8F6/Screenshot-2023-06-26-192305.png",
         "thumbnail": [
@@ -55,7 +55,6 @@
             "https://i.ibb.co/M8Dn7Mk/Screenshot-2023-06-26-192801.png",
             "https://i.ibb.co/WKHBXpj/Screenshot-2023-06-26-193010.png",
             "https://i.ibb.co/n1dN93G/Screenshot-2023-06-26-193201.png"
-           
         ],
         "project_summary": "Web app for exploring movies, including downloads",
         "tools_and_technology": [
@@ -82,7 +81,7 @@
         ]
     },
     {
-        "projectID":3,
+        "projectID": 3,
         "project_name": "Toy-Monster",
         "project_banner": "https://i.ibb.co/CVZjyX5/Screenshot-2023-06-26-193724.png",
         "thumbnail": [
@@ -96,7 +95,6 @@
             "https://i.ibb.co/4mZZ3tj/Screenshot-2023-06-26-194434.png",
             "https://i.ibb.co/cL2xfkz/Screenshot-2023-06-26-194511.png",
             "https://i.ibb.co/4NBZC5s/Screenshot-2023-06-26-194548.png"
-           
         ],
         "project_summary": "Web app for online toy inventory management system.",
         "tools_and_technology": [
@@ -117,6 +115,93 @@
             "Explore Latest Movie",
             "Download And Watch",
             "Buy Credit"
+        ]
+    },
+    {
+        "projectID": 4,
+        "project_name": "Manpower BD",
+        "project_banner": "https://i.ibb.co/ZfhJ14J/Screenshot-2023-08-12-182521.png",
+        "thumbnail": [
+            "https://i.ibb.co/yk197nX/1.png",
+            "https://i.ibb.co/xhvTjYr/2.png",
+            "https://i.ibb.co/chCQcbg/3.png",
+            "https://i.ibb.co/3CdkWYG/4.png",
+            "https://i.ibb.co/tH2wBPs/5.png",
+            "https://i.ibb.co/qddsksn/6.png",
+            "https://i.ibb.co/3FH4c9W/7.png",
+            "https://i.ibb.co/4t3f7Vn/8.png",
+            "https://i.ibb.co/v4GwzMF/9.png",
+            "https://i.ibb.co/khpGTmk/11.png",
+            "https://i.ibb.co/Y2BVwWQ/12.png",
+            "https://i.ibb.co/GtKzSZV/10.png",
+            "https://i.ibb.co/xMd8pnz/14.png",
+            "https://i.ibb.co/4Z3sMgh/15.png",
+            "https://i.ibb.co/PGw8Mb5/13.png",
+            "https://i.ibb.co/L1T855s/16.png",
+            "https://i.ibb.co/9Gz1CFG/17.png",
+            "https://i.ibb.co/1TXg1CP/18.png",
+            "https://i.ibb.co/7Cq0gjm/19.png",
+            "https://i.ibb.co/j335rb5/20.png"
+        ],
+        "project_summary": "A website for easily hiring manpower in few minutes",
+        "tools_and_technology": [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "PHP",
+            "Bootstrap",
+            "SSLCOMMERZ",
+            "Mysql"
+        ],
+        "live_site_link": "https://youtu.be/kl0n70nQw8w",
+        "client_side_link": "https://github.com/toufiqulislamtanmoy/offline-manpower-management",
+        "server_side_link": "https://github.com/toufiqulislamtanmoy/offline-manpower-management",
+        "date_of_creation": "2023-06-18",
+        "features": [
+            "Dedicated Dashboard",
+            "Explore Workers",
+            "Hire Workers",
+            "Pay for the work"
+        ]
+    },
+    {
+        "projectID": 5,
+        "project_name": "E-Shopy",
+        "project_banner": "https://i.ibb.co/7CLgj5t/1.png",
+        "thumbnail": [
+            "https://i.ibb.co/7CLgj5t/1.png",
+            "https://i.ibb.co/gwWYCvQ/2.png",
+            "https://i.ibb.co/jJPx5yk/3.png",
+            "https://i.ibb.co/mF4RXcr/4.png",
+            "https://i.ibb.co/5jpNkc3/5.png",
+            "https://i.ibb.co/f985J93/6.png",
+            "https://i.ibb.co/m8vFttd/7.png",
+            "https://i.ibb.co/HnZJ4QK/8.png",
+            "https://i.ibb.co/9G2v88D/9.png",
+            "https://i.ibb.co/tDFpqqp/10.png"
+        ],
+        "project_summary": "A website where user can buy a book and also can request for borrow a book",
+        "tools_and_technology": [
+            "React",
+            "Tailwind",
+            "Express Js",
+            "Node Js",
+            "MongoDB",
+            "Firebase Authentication",
+            "JWT",
+            "React Query",
+            "React-from-hook",
+            "Axios"
+        ],
+        "live_site_link": "https://online-book-shop-9a9ec.web.app/",
+        "client_side_link": "https://github.com/toufiqulislamtanmoy/online-book-shop-client",
+        "server_side_link": "https://github.com/toufiqulislamtanmoy/online-book-shop-server",
+        "date_of_creation": "2023-08-28",
+        "features": [
+            "Dedicated Dashboard",
+            "Add to cart book",
+            "Borrow Request",
+            "Secure Payment"
         ]
     }
 ]

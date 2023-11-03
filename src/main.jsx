@@ -10,7 +10,8 @@ import Main from './Layout/Main';
 import Home from './Components/Home/Home/Home';
 import ProjectDetails from './Components/Home/Projects/ProjectDetails';
 import ProjectLayout from './Layout/ProjectLayout';
-
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+const queryClient = new QueryClient()
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
 
-      } 
+      }
     ]
   },
   {
@@ -33,13 +34,15 @@ const router = createBrowserRouter([
         element: <ProjectDetails />
       },
     ],
-  }  
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div className="max-w-7xl mx-auto">
-      <RouterProvider router={router} />
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <div className="max-w-7xl mx-auto">
+        <RouterProvider router={router} />
+      </div>
+    </QueryClientProvider>
   </React.StrictMode>,
 )

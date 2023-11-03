@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        Kaushan: ['Kaushan Script', 'cursive'],
+        Poppins: ['Poppins', 'sans-serif'],
+        Pacifico: ['Pacifico', 'cursive'],
+        Rubik: ['Rubik Vinyl', 'cursive'],
+        Russo: ['Russo One', 'sans-serif'],
+        Libre: ['Libre Baskerville', 'serif']
+      },
+    },
   },
   plugins: [require("daisyui")],
 }

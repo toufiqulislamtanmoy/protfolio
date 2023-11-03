@@ -13,4 +13,5 @@ module.exports = {
     'react-refresh/only-export-components': 'warn',
     "spellcheck/spell-checker": "off",
   },
+
 }
