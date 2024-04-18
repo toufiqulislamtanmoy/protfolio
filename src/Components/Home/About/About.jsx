@@ -1,14 +1,13 @@
 import { useState } from "react";
 import Lottie from "lottie-react";
 import about from "../../../assets/animations/about.json";
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Education from "./Education/Education";
 import usePersonalInfo from "../../../Hooks/usePersonalInfo";
 import Hold from "../../Shared/Hold";
 
 const About = () => {
-    AOS.init();
+
 
     const [personalInfo, loading] = usePersonalInfo();
     const {
@@ -30,7 +29,7 @@ const About = () => {
     return (
         <>
             {
-                loading ? <Hold text={"Loading........"}/> :
+                loading ? <Hold text={"Loading........"} /> :
                     <div id="about">
                         <div className="hero bg-base-100">
                             <div className="hero-content flex-col lg:flex-row">

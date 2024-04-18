@@ -5,7 +5,7 @@ import useLoading from "../Hooks/useLoadding";
 import Hold from "../Components/Shared/Hold";
 
 const Main = () => {
-    const isLoading = useLoading(5000)
+    const isLoading = useLoading(1000)
     return (
         <>
             {

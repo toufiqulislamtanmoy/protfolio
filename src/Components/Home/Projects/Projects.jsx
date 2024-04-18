@@ -1,5 +1,4 @@
-import  { useState, useEffect } from "react";
-import AOS from "aos";
+import { useState, useEffect } from "react";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import Tabs from "@mui/material/Tabs";
@@ -7,7 +6,7 @@ import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 
 const Projects = () => {
-    AOS.init();
+
     const [projects, setProjects] = useState([]);
     const [value, setValue] = useState(0);
     const [filteredProjects, setFilteredProjects] = useState([]);
@@ -68,9 +67,10 @@ const Projects = () => {
             </Box>
             <div className="flex items-center justify-center bg-base-100 lg:mx-0 mx-10">
                 <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 mt-5">
-                    {filteredProjects.map((project) => (
+                    {filteredProjects.map((project, ind) => (
                         <div
                             data-aos="fade-down-left"
+                            data-aos-delay={200 * ind}
                             key={project.projectID}
                             className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30"
                         >

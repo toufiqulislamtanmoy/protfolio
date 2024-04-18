@@ -13,7 +13,8 @@ export default {
         Pacifico: ['Pacifico', 'cursive'],
         Rubik: ['Rubik Vinyl', 'cursive'],
         Russo: ['Russo One', 'sans-serif'],
-        Libre: ['Libre Baskerville', 'serif']
+        Libre: ['Libre Baskerville', 'serif'],
+        TiltPrism: ['Tilt Prism', 'serif']
       },
     },
   },

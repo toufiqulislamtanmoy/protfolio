@@ -1,5 +1,4 @@
 import { Link } from "react-scroll";
-import Logo from "../../../assets/Logo/logo.png"
 import useThemeToggle from "../../../Hooks/useThemeToggle";
 import { FaMoon, FaSun } from "react-icons/fa";
 
@@ -15,6 +14,10 @@ const Navbar = () => {
         <li>
             <Link className="" to="skills" spy={true} smooth={true} offset={-100} duration={500} >
                 Skills
+            </Link>
+        </li>
+        <li>
+            <Link className="" to="experience" spy={true} smooth={true} offset={-90} duration={500} >Experience
             </Link>
         </li>
         <li>
@@ -46,8 +49,9 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <Link to="header" className="normal-case text-xl cursor-pointer">
-                    <img className="w-[120px]" src={Logo} alt="" />
+                <Link to="header" className="normal-case text-3xl cursor-pointer font-TiltPrism ">
+                    {/* <img className="w-[120px]" src={Logo} alt="" /> */}
+                    Touf<span className="text-[#00eeff] ">i</span>qul.
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">

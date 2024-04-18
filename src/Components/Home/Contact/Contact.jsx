@@ -1,10 +1,9 @@
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import Swal from 'sweetalert2'
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 const Contact = () => {
-    AOS.init();
+
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
@@ -16,7 +15,7 @@ const Contact = () => {
                     'Your response has been send',
                     'Thank you for your massage',
                     'success'
-                  )
+                )
             }, (error) => {
                 console.log(error.text);
             });
@@ -24,7 +23,7 @@ const Contact = () => {
 
 
     return (
-        <div id="contact" className="my-10  p-5" data-aos="fade-down-right">
+        <div id="contact" className="my-10  p-5" data-aos="zoom-in">
             <h1 className="text-5xl font-bold text-center my-10">Contact Me</h1>
             <form ref={form} onSubmit={sendEmail} className="space-y-5">
                 <div className="form-control">

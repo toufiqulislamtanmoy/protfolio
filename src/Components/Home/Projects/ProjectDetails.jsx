@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import ReactPlayer from 'react-player';
 import { FaGithub, FaGlobe } from "react-icons/fa";
 
 const ProjectDetails = () => {
@@ -15,28 +15,31 @@ const ProjectDetails = () => {
     }, [id])
     const {
         project_name,
-        thumbnail,
         project_summary,
+        project_preview_url,
         tools_and_technology,
         live_site_link,
         client_side_link,
         server_side_link,
         features
     } = project;
-    console.log(id);
+    console.log(project);
     return (
         <div className="mx-5">
             <h2 className="text-5xl font-bold text-center my-10">{project_name}</h2>
             <div className="card bg-base-100 ">
                 <div className="lg:w-[50%] w-full mx-auto shadow-2xl p-5  bg-secondary rounded-2xl">
-                    <Carousel autoPlay={true} infiniteLoop={true} interval={3000}>
-                        {thumbnail &&
-                            thumbnail.map((thumb, ind) => (
-                                <div key={ind}>
-                                    <img src={thumb} alt={`Thumbnail ${ind}`} />
-                                </div>
-                            ))}
-                    </Carousel>
+                    <ReactPlayer
+                        url={project_preview_url}
+                        height={window.innerWidth > 600 ? 450 : 250}
+                        width="100%"
+                        controls={true}
+                        config={{
+                            youtube: {
+                                playerVars: { showinfo: 1 },
+                            },
+                        }}
+                    />
                 </div>
                 <div className="card-body space-y-5">
                     <h2 className="card-title">

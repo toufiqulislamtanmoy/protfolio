@@ -30,6 +30,7 @@
     "react-file-download": "^0.3.5",
     "react-icons": "^4.8.0",
     "react-loader-spinner": "^5.4.5",
+    "react-player": "^2.15.1",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.11.2",
     "react-scroll": "^1.8.9",

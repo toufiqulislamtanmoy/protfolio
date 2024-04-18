@@ -14,7 +14,7 @@ import Hold from "../../Shared/Hold";
 
 const Header = () => {
     const [personalInfo, loading] = usePersonalInfo();
-    const { 
+    const {
         name,
         email,
         phone_number,
@@ -24,18 +24,18 @@ const Header = () => {
         links,
         gretings
     } = personalInfo[0] || {};
-    
+
     const { facebook, linkedin, github } = links || {};
     console.log(loading);
     return (
         <>
             {
-                loading ? <Hold text={"Loading........"}/> :
+                loading ? <Hold text={"Loading........"} /> :
                     <div className="lg:my-0 my-24" id="header">
                         <div className="hero min-h-screen bg-base-100">
                             <div className="hero-content flex-col lg:flex-row-reverse">
                                 <div className="avatar lg:w-1/2 flex items-center justify-end">
-                                    <div className="cursor-pointer rounded-full border-8 border-gray-400 hover:border-green-400 shadow-2xl">
+                                    <div className="cursor-pointer rounded-full border-2 border-gray-400 shadow-[0px_-5px_10px_5px_#90CDF4] hover:border-[#00eeff] ">
                                         <img src={profile_image} alt="Loading Problem To Server" className="max-w-sm rounded-lg shadow-2xl object-cover transition-transform duration-500 hover:rotate-3 hover:scale-125" />
                                     </div>
                                 </div>
@@ -44,7 +44,7 @@ const Header = () => {
                                     <div className="chat chat-start lg:block flex items-center justify-center">
                                         <div className="chat-bubble chat-bubble-secondary">{gretings ? gretings : "Assalamualikum, I'm"}</div>
                                     </div>
-                                    <h1 className="lg:text-5xl text-3xl font-bold">{name? name : "Toufiqul Islam Tanmoy"}</h1>
+                                    <h1 className="lg:text-5xl text-3xl font-bold">{name ? name : "Toufiqul Islam Tanmoy"}</h1>
                                     <TypeAnimation
                                         sequence={[
                                             'Web Developer',
@@ -84,7 +84,10 @@ const Header = () => {
                                         </Link>
 
                                     </div>
-                                    <a className="btn btn-outline" href='resume.pdf' download="Toufiqul_Resume.pdf">Download Resume <FaDownload className=" mx-3" /></a>
+
+
+                                    <a className="inline-flex items-center justify-center py-3 px-5 bg-transparent border-[1px] border-[#00eeff] hover:text-[#00eeff] transition-all duration-500 rounded-tl-2xl rounded-br-2xl hover:shadow-[3px_5px_10px_0px_#00eeff] " href='resume.pdf' download="Toufiqul_Resume.pdf">Download Resume <FaDownload className=" mx-3" /></a>
+
                                 </div>
                             </div>
                         </div>
