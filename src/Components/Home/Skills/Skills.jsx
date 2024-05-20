@@ -9,7 +9,6 @@ const Skills = () => {
     const { softSkills } = useSoftSkills();
     const { techskills } = useTechskills();
 
-    console.log("Tech Skills is here", techskills);
 
     return (
         <div id='skills' className='my-10' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
@@ -38,7 +37,7 @@ const Skills = () => {
                                     defColor={{
                                         fair: 'orangered',
                                         good: 'yellow',
-                                        excellent: 'orange',
+                                        excellent: '#2CD0BB',
                                         poor: 'red',
                                     }}
                                 />
@@ -67,8 +66,8 @@ const Skills = () => {
                                     hollowBackgroundColor="#333333"
                                     defColor={{
                                         fair: 'orangered',
-                                        good: 'yellow',
-                                        excellent: 'orange',
+                                        good: '#68D2E8',
+                                        excellent: '#2CD0BB',
                                         poor: 'red',
                                     }}
                                 />

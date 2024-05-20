@@ -9,8 +9,9 @@ const ProjectNav = () => {
     return (
         <div className="navbar bg-base-100 shadow-xl rounded-2xl p-3">
             <div className="flex-1 items-center">
-                <Link to="/" className="normal-case text-xl cursor-pointer">
-                    <img className="w-[120px]" src={Logo} alt="" />
+                <Link to="/" className="normal-case text-3xl cursor-pointer  font-TiltPrism">
+                    {/* <img className="w-[120px]" src={Logo} alt="" /> */}
+                    Touf<span className="text-[#00eeff] ">i</span>qul.
                 </Link>
             </div>
             <div className="flex-1 gap-2 items-center">

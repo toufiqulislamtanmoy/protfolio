@@ -25,7 +25,7 @@ const Experience = () => {
                         </div>
                         <h4 className='card-compact text-teal-400'></h4>
                         <p className='text-justify'>
-                            During this period, I embarked on a journey to become a web developer, focusing on learning and honing my skills in bug fixing, problem solving, and web development. Although I did not have formal work experience, I dedicated significant time and effort to self-study and practical projects to build a solid foundation in web development.
+                        As a Junior Front-End Developer at Ankabut Software, I convert UI designs into responsive websites, integrate API data, and adhere to best practices in front-end development to ensure high-quality user experiences.
                         </p>
                     </div>
                 </div>

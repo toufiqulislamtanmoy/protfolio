@@ -87,7 +87,10 @@ const Projects = () => {
                                     {project.project_name}
                                 </h1>
                                 <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                                    {project.project_summary}
+                                    {
+                                    project?.project_summary?.length > 20 ? project?.project_summary.slice(0, 20) + '...' : 
+                                    project?.project_summary
+                                }
                                 </p>
                                 <Link
                                     to={`/projects/projectsDetails/${project._id}`}

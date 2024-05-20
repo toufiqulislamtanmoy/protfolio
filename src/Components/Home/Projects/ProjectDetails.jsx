@@ -21,7 +21,8 @@ const ProjectDetails = () => {
         live_site_link,
         client_side_link,
         server_side_link,
-        features
+        features,
+        access
     } = project;
     console.log(project);
     return (
@@ -68,22 +69,43 @@ const ProjectDetails = () => {
                     </div>
 
                     <div className="py-10">
-                        <div className="lg:flex gap-4 items-center justify-around">
-                            <Link to={live_site_link} className="flex flex-col items-center justify-center gap-4  hover:scale-125 hover:text-[#00eeff] cursor-pointer transition duration-150 ease-out hover:ease-in" spy={true} smooth={true}  >
-                                <span className="text-4xl text-center"><FaGlobe /></span>
-                                <span className="text-xl">Live Preview</span>
-
-                            </Link>
-                            <Link to={client_side_link} className="flex flex-col items-center justify-center gap-4  hover:scale-125 hover:text-[#00eeff] cursor-pointer text-4xl transition duration-150 ease-out hover:ease-in" spy={true} smooth={true}  >
-                                <span className="text-4xl text-center"><FaGithub /></span>
-                                <span className="text-xl">Client Source Code</span>
-                            </Link>
-                            <Link to={server_side_link} className="flex flex-col items-center justify-center gap-4  hover:scale-125 hover:text-[#00eeff] cursor-pointer text-4xl transition duration-150 ease-out hover:ease-in" spy={true} smooth={true}  >
-                                <span className="text-4xl text-center"><FaGithub /></span>
-                                <span className="text-xl">Server Source Code</span>
-                            </Link>
-                        </div>
+                        {access ? (
+                            <div className="lg:flex gap-4 items-center justify-around">
+                                <Link
+                                    to={live_site_link}
+                                    className="flex flex-col items-center justify-center gap-4 hover:scale-125 hover:text-[#00eeff] cursor-pointer transition duration-150 ease-out hover:ease-in"
+                                    spy={true}
+                                    smooth={true}
+                                >
+                                    <span className="text-4xl text-center"><FaGlobe /></span>
+                                    <span className="text-xl">Live Preview</span>
+                                </Link>
+                                <Link
+                                    to={client_side_link}
+                                    className="flex flex-col items-center justify-center gap-4 hover:scale-125 hover:text-[#00eeff] cursor-pointer text-4xl transition duration-150 ease-out hover:ease-in"
+                                    spy={true}
+                                    smooth={true}
+                                >
+                                    <span className="text-4xl text-center"><FaGithub /></span>
+                                    <span className="text-xl">Client Source Code</span>
+                                </Link>
+                                <Link
+                                    to={server_side_link}
+                                    className="flex flex-col items-center justify-center gap-4 hover:scale-125 hover:text-[#00eeff] cursor-pointer text-4xl transition duration-150 ease-out hover:ease-in"
+                                    spy={true}
+                                    smooth={true}
+                                >
+                                    <span className="text-4xl text-center"><FaGithub /></span>
+                                    <span className="text-xl">Server Source Code</span>
+                                </Link>
+                            </div>
+                        ) : (
+                            <div className="text-center  text-yellow-300">
+                                Codebase is not public or is premium. Please contact the owner for access.
+                            </div>
+                        )}
                     </div>
+
                 </div>
             </div>
         </div>
